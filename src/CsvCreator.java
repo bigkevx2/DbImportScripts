@@ -46,6 +46,7 @@ public class CsvCreator {
             input = input.trim(); // get rid of useless spaces
             input = input.toLowerCase(); // all in lowercase
             input = input.replaceAll(",", ""); // undo all data from delimiters
+            input = input.replaceAll("/",""); // undo slashes
             counter++;
             switch (counter) {
 //                    Name of location
