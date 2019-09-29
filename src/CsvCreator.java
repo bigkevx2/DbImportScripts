@@ -43,12 +43,12 @@ public class CsvCreator {
 //        data processing
 
 //        Winkels Mario has three leading lines that we don't need, let's stip them
-        for (int i=0;i<4;i++) {
+        for (int i=0;i<3;i++) {
             in.nextLine();
         }
 
 //        Create column header
-        out.println("location_name,address,housenumber,suffix,city,country,postalcode,tel.number,blank");
+        out.println("location_name,address,housenumber,suffix,city,country,postalcode,tel number,blank");
         while (in.hasNextLine()) {
             input = in.nextLine();
             input = input.trim(); // get rid of useless spaces
